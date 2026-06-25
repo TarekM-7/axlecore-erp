@@ -1,6 +1,6 @@
 # AxleCore ERP
 
-![Preview](assets/preview.png)
+![Preview](assets/image.png)
 
 A local ERP environment built with Odoo 17 and PostgreSQL 15, orchestrated with Docker Compose. Built as a learning exercise to explore ERP systems in the context of an automotive stamping company called **AxleCore**.
 
