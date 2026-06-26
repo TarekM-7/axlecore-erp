@@ -7,7 +7,7 @@ services:
       - POSTGRES_USER=odoo
       - POSTGRES_PASSWORD=odoo
     volumes:
-      - E:/Tarek/Documents/DockerData/odoo-db:/var/lib/postgresql/data
+      - db-data:/var/lib/postgresql/data
   odoo:
     image: odoo:17
     ports: 
@@ -17,6 +17,9 @@ services:
       - USER=odoo
       - PASSWORD=odoo
     volumes:
-      - E:/Tarek/Documents/DockerData/odoo-data:/var/lib/odoo
+      - odoo-data:/var/lib/odoo
     depends_on:
       - db
+volumes:
+  db-data:
+  odoo-data:
